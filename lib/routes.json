@@ -425,6 +425,13 @@
                 "validation": "",
                 "invalidmsg": "",
                 "description": "OAuth token"
+            },
+            "selector": {
+                "type": "String",
+                "required": true,
+                "validation": "",
+                "invalidmsg": "",
+                "description": "Selector"
             }
         },
         "acceptTree": {
@@ -1498,6 +1505,19 @@
                 "$repo": null,
                 "$page": null,
                 "$per_page": null
+            },
+            "description": "Get all References"
+        },
+
+        "get-references-with-selector": {
+            "url": "/repos/:owner/:repo/git/refs/:selector",
+            "method": "GET",
+            "params": {
+                "$owner": null,
+                "$repo": null,
+                "$page": null,
+                "$per_page": null,
+                "$selector": null
             },
             "description": "Get all References"
         },

@@ -18086,6 +18086,22 @@ github.gitdata.getReferences({ ... });
  */
 
 /**
+ * @api {get} /repos/:owner/:repo/git/refs/:selector getReferencesWithSelector
+ * @apiVersion ???
+ * @apiName getReferencesWithSelector
+ * @apiDescription Get all References, with selector
+ * @apiGroup gitdata
+ *
+ * @apiParam {String} owner  
+ * @apiParam {String} selector  
+ * @apiParam {String} repo  
+ * @apiParam {Number} [page]  Page number of the results to fetch.
+ * @apiParam {Number} [per_page=30]  A custom page size up to 100. Default is 30.
+ * @apiExample {js} ex:
+github.gitdata.getReferencesWithSelector({ ... });
+ */
+
+/**
  * @api {get} /repos/:owner/:repo/git/tags/:sha getTag
  * @apiVersion 5.2.1
  * @apiName getTag
