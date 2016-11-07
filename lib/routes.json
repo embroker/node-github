@@ -164,7 +164,8 @@
                 "required": true,
                 "validation": "",
                 "invalidmsg": "",
-                "description": "String of the name of the fully qualified reference (ie: heads/master). If it doesn’t have at least one slash, it will be rejected."
+                "description": "String of the name of the fully qualified reference (ie: heads/master). If it doesn’t have at least one slash, it will be rejected.",
+                "combinedSlashes": true
             },
             "number": {
                 "type": "Number",
@@ -431,7 +432,8 @@
                 "required": true,
                 "validation": "",
                 "invalidmsg": "",
-                "description": "Selector"
+                "description": "Selector",
+                "combinedSlashes": true
             }
         },
         "acceptTree": {
